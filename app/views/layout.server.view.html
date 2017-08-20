@@ -1,0 +1,50 @@
+<html>
+
+<head>
+  <title>YOTI Test</title>
+  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css"></link>
+  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap-theme.css"></link>
+  <link rel="stylesheet" href="assets/css/style.css"></link>
+  <script src="https://sdk.yoti.com/clients/browser.js"></script>
+</head>
+
+<body class="ng-cloak">
+  <header>
+    <div class="site-heading">
+    <a ui-sref="home"><h1>YOTI Test</h1></a>
+    </div>
+  </header>
+  <section class="content">
+    <section class="container">
+       {{{block "content"}}}
+    </section>
+  </section>
+
+    <noscript>
+    <style>
+      [ng\:cloak], [ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+        display: block !important;
+      }
+    </style>
+    <div class="alert alert-warning">
+      <strong>This page requires JavaScript.</strong> Please enable it in your browser.
+    </div>
+  </noscript>
+  <!-- Load local libraries -->
+  <script type="text/javascript" src="lib/angular/angular.js"></script>
+  <script type="text/javascript" src="lib/angular-resource/angular-resource.js"></script>
+  <script type="text/javascript" src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+  <script type="text/javascript" src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script type="text/javascript" src="lib/angular-mocks/angular-mocks.js"></script>
+
+  <!-- Load the example module -->
+  <script type="text/javascript" src="/home/home.client.module.js"></script>
+  <script type="text/javascript" src="/home/controllers/home.client.controller.js"></script>
+  <script type="text/javascript" src="/home/config/home.client.routes.js"></script>
+
+
+  <!-- Bootstrap AngularJS application -->
+  <script type="text/javascript" src="/application.js"></script>
+</body>
+
+</html>
