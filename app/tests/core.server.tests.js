@@ -16,7 +16,7 @@ const app = require('../../index'),
                 .expect(200)
                 .end(function(err,res){
                     console.log(res.body);
-                    res.body.should.be.an.json;
+                    res.body.should.be.a('Object');
                     done();
                 });
         });

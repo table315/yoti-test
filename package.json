@@ -4,7 +4,8 @@
   "description": "A yoti Test application",
   "main": "index.js",
   "scripts": {
-    "test": "mocha src/**/**.test.js",
+    "install-globals": "npm install -g grunt-cli bower mocha karma-cli",
+    "test": "grunt test",
     "postinstall": "bower install --config.interactive=false"
   },
   "repository": {
@@ -43,7 +44,6 @@
     "karma-jasmine": "^1.1.0",
     "karma-mocha-reporter": "^2.2.3",
     "mocha": "^3.2.0",
-    "nock": "^9.0.14",
     "nodemon": "^1.11.0",
     "supertest": "^3.0.0"
   }

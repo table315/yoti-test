@@ -1,0 +1,5 @@
+language: node_js
+node_js:
+  - "7.0"
+before_install: npm run install-globals
+install: npm install
